@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Coapatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=l.0">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="/Assets/style.css">
+    <script type="text/javascript" src="/Assets/type.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/141fe83e6a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><span>A</span>rchishman.</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>                    
+            </nav>
+            <div class="header-text">
+                <p id="bio"></p>
+                <h1>Hi, I'm <span>Archishman</span> Ghosh<br> From India</h1>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="\Images\abt.jpg" height="600">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Archishman, a computer science engineering student with a strong interest in data structures and algorithms, as well as full-stack development. I have a solid background in programming languages like Java and Python, and I love tackling complex programming problems.
+                        <br><br>
+                        Throughout my academic career, I've done really well in computer science courses, earning top grades and awards for my work. I have a deep understanding of programming principles, software development methodologies, and system architecture. I'm also an active participant in coding competitions and hackathons, where I showcase my skills and collaborate with peers to create innovative solutions.
+                        <br><br>
+                        In addition to my academic pursuits, I'm constantly working to further develop my skills in computer science. I've built several personal projects, including a full-stack web application that demonstrates my proficiency in front-end and back-end technologies. I've also contributed to open-source projects and participated in online coding communities to share my knowledge and learn from others.
+                        <br><br>
+                        Overall, I'm a dedicated and enthusiastic computer science engineering student with a passion for solving complex problems and creating innovative solutions. My proficiency in DSA, Java, Python, and full-stack development make me a valuable asset to any team.</p>
+                    <!-- <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>java</span><br>coding and optimizing</li>
+                            <li><span>java</span><br>coding and optimizing</li>
+                            <li><span>java</span><br>coding and optimizing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>py</span><br>coding and optimizing</li>
+                            <li><span>py</span><br>coding and optimizing</li>
+                            <li><span>jpy</span><br>coding and optimizing</li>
+                        </ul>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script> -->
+    <div id="education">
+        <div class="container">
+            <h1 class="edu">Education</h1>
+            <div class="horizontal-scroll">
+                <div class="card">
+                    <img src="https://sxsbwn.org/photo/sxsb.jpg" alt="St. Xavier's School, Burdwan" class="src">
+                    <p class="name">St. Xavier's School, Burdwan</p>
+                    <p class="type">Primary and Secondary School(2009-2020)</p>
+                </div>
+                <div class="card">
+                    <img src="https://dorkar.in/wp-content/uploads/2022/07/2022-01-09-372x400.jpg" alt="Burdwan Municipal High School" class="src">
+                    <p class="name">Burdwan Municipal High School</p>
+                    <p class="type">Higher Secondary School(2020-2021)</p>
+                </div>
+                <div class="card">
+                    <img src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2020/08/790-75.jpg" alt="Amrita School of Engineering, Bangalore" class="src">
+                    <p class="name">Amrita School of Engineering, Bangalore</p>
+                    <p class="type">University(2022-present)</p>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="skill">Skills</h1>
+            <div class="conticon">
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt" ></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-python"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
