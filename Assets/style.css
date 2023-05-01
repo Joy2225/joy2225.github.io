@@ -290,7 +290,7 @@ nav ul li a:hover::after{
 }
 .conticon i{
 	font-size: 5em;
-	padding:0px 7.5%;	
+	padding:0px 7%;	
 	transition:.5s;
 }
 .fa-brands.fa-java{
