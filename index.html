@@ -43,7 +43,7 @@
                     <img src="Images\abt.jpg" height="600">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title" style="color:black;">About Me</h1>
+                    <h1 class="sub-titleabt" >About Me</h1>
                     <p>Hi, I'm Archishman, a computer science engineering student with a strong interest in data structures and algorithms, as well as full-stack development. I have a solid background in programming languages like <b>Java</b> and <b>Python</b>, and I love tackling complex programming problems.
                         <br><br>
                         Throughout my academic career, I've done really well in computer science courses, earning top grades and awards for my work. I have a <b>deep understanding of programming principles</b>, software development methodologies, and system architecture. I'm also an <b>active participant</b> in coding competitions and hackathons, where I showcase my skills and collaborate with peers to create innovative solutions.
@@ -180,7 +180,7 @@
                     <a href="/Assets/CV.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -201,6 +201,18 @@
         function closemenu(){
             sidemenu.style.right="-200px";
         }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxJpidCz655pwmItjnOlWyq3XcJBPUx3jWlw5RnHYqcn4iltGWwKyM2FtVKHmaRElyGPg/exec'
+        const form = document.forms['submit-to-google-sheet']
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 </html>
