@@ -11,13 +11,17 @@
     <script src="https://kit.fontawesome.com/141fe83e6a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <div class="scroll-button">
+        <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
     
 	<div id="header">
         <div class="container">
-            <nav>
+            <nav id="home">
                 <a href="#" class="logo"><span class="s1">Na</span><span class="s2">ma</span><span class="s3">s</span><span class="s4">te!!!</span></a>
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -43,7 +47,7 @@
                     <img src="Images\abt.jpg" height="600">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-titleabt" >About Me</h1>
+                    <h1 class="sub-titleabt"><span class="topic">About Me</span></h1>
                     <p>Hi, I'm Archishman, a computer science engineering student with a strong interest in data structures and algorithms, as well as full-stack development. I have a solid background in programming languages like <b>Java</b> and <b>Python</b>, and I love tackling complex programming problems.
                         <br><br>
                         Throughout my academic career, I've done really well in computer science courses, earning top grades and awards for my work. I have a <b>deep understanding of programming principles</b>, software development methodologies, and system architecture. I'm also an <b>active participant</b> in coding competitions and hackathons, where I showcase my skills and collaborate with peers to create innovative solutions.
@@ -91,7 +95,7 @@
     </script> -->
     <div id="education">
         <div class="container">
-            <h1 class="edu">Education</h1>
+            <h1 class="edu"><span class="topic">Education</span></h1>
             <div class="horizontal-scroll">
                 <div class="card">
                     <a href="https://sxs-bwn.org/" target="_blank"><img src="https://sxsbwn.org/photo/sxsb.jpg" alt="St. Xavier's School, Burdwan" class="src"></a>
@@ -113,7 +117,7 @@
     </div>
     <div id="skills">
         <div class="container">
-            <h1 class="skill">Skills</h1>
+            <h1 class="skill"><span class="topic">Skills</span></h1>
             <div class="conticon">
                 <i class="fa-brands fa-java"></i>
                 <i class="fa-brands fa-html5"></i>
@@ -168,7 +172,7 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+                    <h1 class="sub-title"><span class="topic">Contact Me</span></h1>
                     <p><i class="fa-solid fa-envelope"></i><a class="mail" href="mailto:archishman9892@gmail.com">archishman9892@gmail.com</a></p>
                     <p><i class="fa-solid fa-phone"></i>0123456789</p>
                     <div class="social-icons">
@@ -195,6 +199,7 @@
             <p>Copyright © Archishman. Made with <i class="fa-solid fa-heart" style="color:red;"></i> by Archishman Ghosh</p>
         </div>
     </div>
+    
     <script>
         var sidemenu = document.getElementById("sidemenu");
         function openmenu(){
