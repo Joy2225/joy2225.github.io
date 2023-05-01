@@ -15,21 +15,21 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo"><span>A</span>rchishman.</a>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class=" fas fa-solid fa-xmark"></i>
+                    <i class=" fas fa-solid fa-xmark" style="color:white;"onclick="closemenu()"></i>
                 </ul>  
                     
-                <i class="fas fa-solid fa-bars"></i>              
+                <i class="fas fa-solid fa-bars" style="color:white;" onclick="openmenu()"></i>              
             </nav>
 
                 <div class="header-text">                
                         <p id="bio"></p>
-                        <h1>Hi, I'm <span>Archishman</span> Ghosh<br> From India</h1>
+                        <h1>Hi, I'm <span>Archishman</span> Ghosh<br> From Bengal, India</h1>
                 </div>
         </div>
     </div>
@@ -192,5 +192,14 @@
             <p>Copyright © Archishman. Made with <i class="fa-solid fa-heart" style="color:red;"></i> by Archishman Ghosh</p>
         </div>
     </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
 </body>
 </html>

@@ -6,7 +6,15 @@
 	scroll-behavior: smooth;
 }
 body{
-	background: white;
+	background: hsla(175, 90%, 61%, 1);
+
+	background: linear-gradient(180deg, hsla(175, 90%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+
+	background: -moz-linear-gradient(180deg, hsla(175, 90%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+
+	background: -webkit-linear-gradient(180deg, hsla(175, 90%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42f5e6", endColorstr="#3e3b92", GradientType=1 );
 	color: #000000;
 }
 #header{
@@ -26,7 +34,6 @@ nav{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	position: sticky;
-	background-color: black;
 }
 .logo{
 	width: 140px;
@@ -39,6 +46,7 @@ nav{
 }
 #bio{
 	color:#35b835;
+	font-size: 40px;
 }
 nav ul li{
 	display: inline-block;
@@ -339,17 +347,13 @@ form .btn.btn2{
 	font-weight: 300;
 	margin-top:20px;
 }
-
-
-
-
 nav .fas{
 	display:none;
 }
 
 @media only screen and (max-width: 1500px) {
 	#header{
-		background-image: url(/Images/abt.jpg);
+		background-image: url(/Images/pic1.png);
 	}
 	.header-text{
 		margin-top: 100%;
@@ -366,11 +370,12 @@ nav .fas{
 		background:#ff004f;
 		position: fixed;
 		top: 0;
-		right: 0;
+		right: -200px;
 		width: 200px;
 		height: 100vh;
 		padding-top:50px;
-
+		z-index:2;
+		transition: right 0.5s;
 	}
 	nav ul li{
 		display: block;
@@ -381,6 +386,5 @@ nav .fas{
 		top: 25px;
 		left: 25px;
 		cursor: pointer;
-
 	}
 }
