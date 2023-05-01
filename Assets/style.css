@@ -28,16 +28,15 @@
   background:#7c0300;
   } */
 body{
-	/* background: hsla(0, 0%, 100%, 1);
+	background: hsla(264, 79%, 23%, 1);
 
-	background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
-
-	background: -moz-linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
-
-	background: -webkit-linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
-
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#000000", GradientType=1 ); */
-	background-color: #310c69;
+	background: linear-gradient(270deg, hsla(264, 79%, 23%, 1) 0%, hsla(258, 100%, 22%, 1) 100%);
+	
+	background: -moz-linear-gradient(270deg, hsla(264, 79%, 23%, 1) 0%, hsla(258, 100%, 22%, 1) 100%);
+	
+	background: -webkit-linear-gradient(270deg, hsla(264, 79%, 23%, 1) 0%, hsla(258, 100%, 22%, 1) 100%);
+	
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#310C69", endColorstr="#21006E", GradientType=1 );
 	color: #ffffff;
 }
 #header{
