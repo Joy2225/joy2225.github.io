@@ -5,16 +5,38 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+/* ::-webkit-scrollbar {
+	width: 15px;
+	background:transparent;
+  }
+  
+  ::-webkit-scrollbar-corner {
+	background-color: #181a1b;
+  }
+  
+  ::-webkit-scrollbar-track {
+	background:transparent;
+	border: transparent;
+	border-radius: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+	background:#748587;
+	border-radius: 12px;
+	transition: all 0.3s ease;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+  background:#7c0300;
+  } */
 body{
 	background: hsla(0, 0%, 100%, 1);
 
-background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+	background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
 
-background: -moz-linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+	background: -moz-linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
 
-background: -webkit-linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+	background: -webkit-linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#000000", GradientType=1 );
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#000000", GradientType=1 );
 	color: #ffffff;
 }
 #header{
@@ -221,7 +243,7 @@ nav ul li a:hover::after{
 	padding: 10px;
 	position: absolute;
 	bottom: 25px;
-	color: #fff;
+	color: #ffffff;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 1.2em;
 }
@@ -230,7 +252,7 @@ nav ul li a:hover::after{
 	padding: 10px;
 	position: absolute;
 	bottom: 10px;
-	color: rgba(0, 255, 255);
+	color: rgb(255, 255, 255);
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 1em;
 	font-weight: 500;
@@ -268,12 +290,41 @@ nav ul li a:hover::after{
 }
 .conticon i{
 	font-size: 5em;
-	color:#6cd945;
 	padding:0px 7.5%;	
 	transition:.5s;
 }
+.fa-brands.fa-java{
+	color:white;
+}
+.fa-brands.fa-html5{
+	color:rgb(193, 188, 188);
+}
+.fa-brands.fa-css3-alt{
+	color:rgb(59, 57, 57);
+}
+.fa-brands.fa-js{
+	color:rgb(52, 51, 51);
+}
+.fa-brands.fa-python{
+	color:rgb(0, 0, 0);
+}
 .conticon i:hover{
 	transform: scale(1.5);
+}
+.fa-brands.fa-java:hover{
+	color:rgb(56, 153, 205);
+}
+.fa-brands.fa-html5:hover{
+	color:rgb(199, 99, 18);
+}
+.fa-brands.fa-css3-alt:hover{
+	color:rgb(85, 160, 241);
+}
+.fa-brands.fa-js:hover{
+	color:rgb(242, 200, 30);
+}
+.fa-brands.fa-python:hover{
+	color:#0fe23d
 }
 
 
@@ -283,7 +334,7 @@ nav ul li a:hover::after{
 } */
 .mail{
 	text-decoration: none;
-	color:#000000;
+	color:#ffffff;
 	transition:.5s;
 }
 .mail:hover{
@@ -330,7 +381,7 @@ nav ul li a:hover::after{
 }
 .btn.btn2:hover{
 	transform:translateY(-5px);
-	background: #ff004f;
+	background: #989892fd;
 }
 .contact-right form{
 	width:100%;
@@ -365,9 +416,9 @@ nav .fas{
 	display:none;
 }
 
-@media only screen and (max-width: 1500px) {
+@media screen and (min-width: 300px) and (max-width: 660px) {
 	#header{
-		background-image: url(/Images/pic1.png);
+		background-image: url("/Images/abt.jpg") !important;
 	}
 	.header-text{
 		margin-top: 100%;
