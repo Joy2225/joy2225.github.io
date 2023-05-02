@@ -427,7 +427,8 @@ form input, form textarea{
 	padding:15px;
 	margin: 15px 0;
 	font-size: 18px;
-	color:#ffffff;
+	color:#000000;
+	font-weight:300;
 	border-radius: 6px;
 }
 form .btn.btn2{
@@ -453,7 +454,7 @@ nav .fas{
 
 
   .topic{
-	color:white;
+	color:rgb(255, 255, 255);
 	position:relative;
 	padding-bottom:px;
   }
