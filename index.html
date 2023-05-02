@@ -12,6 +12,23 @@
     <script src="https://kit.fontawesome.com/141fe83e6a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="load">
+        <div>G</div>
+        <div>N</div>
+        <div>I</div>
+        <div>D</div>
+        <div>A</div>
+        <div>O</div>
+        <div>L</div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let load = document.getElementById("load");
+            setTimeout(() => {
+                load.style.display = "none";
+            }, 5 * 1000);
+        })
+    </script>
 
     <div class="scroll-button">
         <a href="#home"><i class="fas fa-arrow-up"></i></a>
